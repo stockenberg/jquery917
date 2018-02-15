@@ -24,18 +24,15 @@ function generatePagination () {
         $(galleryItems[index]).find('img').attr('data-index', index);
         console.log(index + 1);
         console.log(this);
-        $('.counter').append('<a href="#" data-index="'+index+'"> ' + actualImgCount + '</a>');
+        $('.counter').append('<a href="#" data-index="'+index+'"> &bullet; </a>');
     });
+    // TODO : Next and Previous Buttons
+}
 
-    // Todo : next + prev buttons
-
-    /*
-    for(var i = 0; i < galleryItems.length; i++){
-        console.log(i);
-        console.log(galleryItems[i]);
-    }
-    */
-
+function resetPaginationColor() {
+    $('.counter a').each(function () {
+        $(this).css('color', 'white');
+    })
 }
 
 $(document).ready(function () {
@@ -49,6 +46,10 @@ $(document).ready(function () {
         console.log(galleryItems[this.dataset.index]);
     } );
 
+    $('button.close').click(function () {
+        $('#lightbox').fadeOut(500);
+    });
+
     $('#gallery figure img').click(function () {
         console.log(this.src);
         var src = this.src;
@@ -56,9 +57,19 @@ $(document).ready(function () {
         $('#lightbox').fadeIn(500);
         $('#lightbox figure img').attr('src', src);
 
+        // Set Actual Number to Active
+        // TODO : reset Color of bullets
+        resetPaginationColor();
         $('.counter')
             .find('a[data-index=' + this.dataset.index + ']')
             .css('color', 'red');
 
     });
+
+    $('nav.counter a').click(function () {
+        var src = $(galleryItems[this.dataset.index]).find('img').attr('src');
+        resetPaginationColor();
+        $(this).css('color', 'red');
+        $('#lightbox figure img').attr('src', src);
+    })
 });
