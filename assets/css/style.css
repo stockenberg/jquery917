@@ -1,0 +1,43 @@
+main div {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; }
+  main div figure {
+    width: 20%;
+    margin: 10px; }
+    main div figure img {
+      width: 100%;
+      height: auto; }
+      main div figure img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s; }
+    main div figure figcaption {
+      font-family: "Quicksand", sans-serif;
+      text-align: center;
+      padding: 10px; }
+
+div#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%; }
+  div#lightbox .counter {
+    margin: auto;
+    width: 300px;
+    text-align: center; }
+    div#lightbox .counter a {
+      color: white;
+      text-decoration: none; }
+  div#lightbox figure img {
+    position: fixed;
+    left: calc(50% - 300px);
+    top: 10%;
+    display: block;
+    height: 400px;
+    width: 600px; }
+
+/*# sourceMappingURL=style.css.map */
