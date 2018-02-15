@@ -1,0 +1,12 @@
+ul.notifications {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+  ul.notifications li {
+    list-style-type: none;
+    padding: 20px;
+    background: darkslateblue;
+    color: white;
+    margin: 10px; }
+
+/*# sourceMappingURL=style.css.map */
