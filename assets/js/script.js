@@ -7,5 +7,4 @@ function notify(text, color) {
     }, 3000);
 }
 
-
 notify('Klappt das ? ', '#2365f1');
