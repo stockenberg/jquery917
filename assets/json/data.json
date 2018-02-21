@@ -1,0 +1,118 @@
+[
+  {
+    "id": 451,
+    "firstname": "5i0pmDlVT9",
+    "lastname": "UG6M6cE4VV",
+    "country": "qtMCn59tWQw2",
+    "teaser": "4KbxO3Sqbrl8k1zx43Kg8nK41MofPhF6cloeI8Un",
+    "fulltext": "4NLkqKC5CyYnMEmYEuLnnVw3WXfqww1otbo0FlVS1x5rrBvTpkaetRJjgst7eHY2lQvbEZ0dHADPTbjcmHlfBYrxYU4Ed5vQhel4H1kbvbwWCRzUB3IOTi1PUagbCO4GWbw0MzOZ8r51oTTKgSdKBh4sGiByDvFfwmvQrXwkWrqLn0Sz3sgkaRMeFTEU3hD4NxH9lHip",
+    "description": "GaNXjq62RZJB0go43vmy9bvFPP4ZRZs2DwaCrl6UE4RHSBfVc9tmPQI7ztOXPrHt7GKNnHm6fzJDc1G9BS8mYiOPQioaq5RhNyqBQEDL8DwlFsWVdLOhtiaa2R01m3kwdqFxdskoahVCsXYYUCuAGtKu4C4CguipliHoqXzSnOiuFSnyxvczqJWTqpsMOjEmCvfaFUYG",
+    "birthdate": "2018-02-16",
+    "img": "sKBpumvMP2",
+    "created_at": "2018-02-16 12:49:00",
+    "updated_at": null,
+    "companies": [],
+    "products": [
+      {
+        "id": 2,
+        "name": "Bachelor",
+        "created_at": null,
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 451,
+          "product_id": 2,
+          "course_code": "6AL89XKpIy",
+          "achieved_at": "2018-02-16"
+        }
+      }
+    ],
+    "social_platforms": [],
+    "campuses": [
+      {
+        "id": 3,
+        "name": "SAE München",
+        "street": "PuJoE3GNYq",
+        "postcode": "DbAa13FouL",
+        "country": "ButFaUSjH1",
+        "city": "0nkB5kYErC",
+        "website": "www.CDB5Srl5bt.de",
+        "created_at": "2018-02-16 12:49:18",
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 451,
+          "campus_id": 3
+        }
+      }
+    ],
+    "departments": [
+      {
+        "id": 2,
+        "name": "Game Art",
+        "created_at": "2018-02-16 12:49:18",
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 451,
+          "department_id": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 588,
+    "firstname": "pxUhpIobKW",
+    "lastname": "zmQoelSk9c",
+    "country": "aIDiSMbg9wut",
+    "teaser": "bBiGsdeBIlSN28OYacHyJZlIRKIYbGDqIBKpuDXp",
+    "fulltext": "eBlRIdEtdr29NVBo2KSszD4MNwc3lrKqdVk4LstGJpB8oaikzuYrkTcsvQ6r2jVVQr6iv9NPs4Je5CcewMFpEwCvpAvpeYoPA9jir0r4EGiCUriODWp0nMapUnPCdx6S5vfSOMfe1t2UQfTAPcOZk1TQo6kdpyQSrhizdAstSHfQ55sVsp0q4bz5JFASsBGnwPtH4UKn",
+    "description": "SJS1ohK5lDi8GEMlQYLgDzE1mxiGWkBjV5Kg4hDJtu2RtRNjgcYto0ae0kWMb2xeiLeJUnpnazVogapsfX1bAgONYoToyMk9OmwdsGXYnYiwLHGDDvpTfNn37X5HeJYPFodjbVhSwg7Kn9v6H2rEgxKV9Vyi6xaK51jx9cd1BHWs8OMhBpvj6DFA4w5yZtzA9xQBq2Pk",
+    "birthdate": "2018-02-16",
+    "img": "k0nXaDlgMO",
+    "created_at": "2018-02-16 12:49:01",
+    "updated_at": null,
+    "companies": [],
+    "products": [
+      {
+        "id": 2,
+        "name": "Bachelor",
+        "created_at": null,
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 588,
+          "product_id": 2,
+          "course_code": "UPc3phWI3s",
+          "achieved_at": "2018-02-16"
+        }
+      }
+    ],
+    "social_platforms": [],
+    "campuses": [
+      {
+        "id": 3,
+        "name": "SAE München",
+        "street": "PuJoE3GNYq",
+        "postcode": "DbAa13FouL",
+        "country": "ButFaUSjH1",
+        "city": "0nkB5kYErC",
+        "website": "www.CDB5Srl5bt.de",
+        "created_at": "2018-02-16 12:49:18",
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 588,
+          "campus_id": 3
+        }
+      }
+    ],
+    "departments": [
+      {
+        "id": 2,
+        "name": "Game Art",
+        "created_at": "2018-02-16 12:49:18",
+        "updated_at": null,
+        "pivot": {
+          "alumni_id": 588,
+          "department_id": 2
+        }
+      }
+    ]
+  }
+]
