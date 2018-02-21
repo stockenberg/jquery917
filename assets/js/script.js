@@ -1,6 +1,4 @@
 
-json = [];
-
 $(document).ready(function () {
 
 
@@ -18,6 +16,7 @@ $(document).ready(function () {
             //listItem = document.createElement('li');
            // headline = document.createElement('h5');
             var company = 'Keine Firma';
+
             if(student.companies.length > 0){
                 console.log('test');
                 company = student.companies[student.companies.length-1].name;
@@ -26,22 +25,33 @@ $(document).ready(function () {
             $('#accordion').append("<div class=\"card\">\n" +
                 "            <div class=\"card-header\" id=\"headingOne\">\n" +
                 "                <h5 class=\"mb-0\">\n" +
-                "                    <button class=\"btn btn-link\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n" +
+                "                    <button class=\"btn btn-link openBox\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n" +
                 "                        ToggleInfo\n" +
                 "                    </button>\n" +
                 "                    " + student.firstname + " " + student.lastname + " - " + student.campuses[student.campuses.length-1].name + " - " + student.products[student.products.length-1].pivot.course_code + " - Fachbereich - " + student.products[student.products.length-1].name + "  - " + company  + "\n" +
                 "                </h5>\n" +
                 "            </div>\n" +
                 "\n" +
-                "            <div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\">\n" +
+                "            <div id=\"collapseOne\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\">\n" +
                 "                <div class=\"card-body\">\n" +
-                "                   Zusätzliche Informationen\n" +
+                "                   <img src=\""+student.img+"\" alt=\""+student.firstname+" - "+student.lastname+"\">\n" +
+                "                    <ul>\n" +
+                "                        <li>Country: "+student.country+"</li>\n" +
+                "                        <li>Abschluss Erreicht am: "+student.products[student.products.length-1].pivot.achieved_at+"</li>\n" +
+                "                        <li>ID: "+student.id+"</li>\n" +
+                "                    </ul>\n" +
+                "                    <p>"+student.fulltext+"</p>"+
                 "                </div>\n" +
                 "            </div>\n" +
                 "        </div>");
-
-
         })
     }
+
+    $('#accordion').on('click', '.openBox', function (event) {
+
+        $('.show').removeClass('show');
+        $(event.target).parent().parent().next().addClass('show');
+    });
+
 
 });
