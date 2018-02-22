@@ -2,7 +2,8 @@
  * check the current url if hashtag, when load page - if not default home
  * load page after link click
  */
-function loadPages() {
+function loadPages()
+{
     var initialPageName = window.location.hash.split('#')[1];
 
     $('.container').load('pages/home.html');
@@ -12,6 +13,7 @@ function loadPages() {
             if(typeof jqXHR.status !== 'undefined' && jqXHR.status === 404){
                 $('.container').load('pages/' + jqXHR.status + '.html');
             }
+
         });
     }
 
@@ -30,5 +32,9 @@ function loadPages() {
 $(document).ready(function () {
 
     loadPages();
+    setTimeout(function (){
+
+    }, 3000);
+
 
 });
